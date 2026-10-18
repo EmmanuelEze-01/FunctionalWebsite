@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -15,16 +23,20 @@
         <li>About</li>
       </ul>
       <div>
-        <i class="fa-solid fa-palette"></i>
-        <button>Get Started</button>
+        <button class="theme-btn" id="theme-btn">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+        <button class="menu-btn" onclick="menuToggle()" id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="gs-btn">Get Started</button>
       </div>
     </header>
     <section class="hero">
-      <div class="">
-        <div>
+      <div class="top">
           <div class="text-content">
             <span>BUILD, GROW, SUCCEED.</span>
-            <h2>Modern tools for bigger dreams.</h2>
+            <h2>Modern tools for <h3>bigger dreams.</h3></h2>
             <p>
               A simple and powerful platform to help you manage your work, stay
               organized and achive more - all in one place.
@@ -34,34 +46,38 @@
               <button>Learn More</button>
             </div>
           </div>
+
           <div class="card-holder">
             <span>Everything you need</span>
-            <p>Powerful features, designed for simplicty</p>
+            <p id="pdes">Powerful features, designed for simplicty</p>
             <div class="card-contanier">
               <div class="card">
+                <i class="fa-regular fa-circle-check"></i>
                 <div>
-                  <i class="fa-regular fa-circle-check"></i>
                   <span>Task Management</span>
                   <p>Keep track of what matters most.</p>
                 </div>
               </div>
               <div class="card">
+                <i class="fa-solid fa-users"></i>
                 <div>
-                  <i class="fa-solid fa-users"></i>
                   <span>Team Collaboration</span>
                   <p>Work better, together.</p>
                 </div>
               </div>
               <div class="card">
+                <i class="fa-solid fa-vault"></i>
                 <div>
-                  <i class="fa-solid fa-vault"></i>
                   <span>Secure & Reliable</span>
                   <p>Your data is always protected</p>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
+
+
         <div class="bottom">
           <div class="info">
             <i class="fa-solid fa-bolt"></i>
@@ -86,7 +102,18 @@
           </div>
         </div>
       </div>
-      <div></div>
     </section>
+
+    <div class="hamburgermenu" id="toggle-menu">
+      <nav>
+        <span class="tglink">Home</span>
+        <span class="tglink">Features</span>
+        <span class="tglink">Pricing</span>
+        <span class="tglink">About</span>
+        <button class="tglink">Get Started</button>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
