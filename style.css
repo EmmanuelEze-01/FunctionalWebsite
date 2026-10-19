@@ -166,7 +166,7 @@ section {
   display: flex;
   flex-direction: column;
   transition: all 2s ease;
-
+  padding-right: 130px;
   gap: 40px;
 }
 
