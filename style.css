@@ -249,8 +249,8 @@ section {
 }
 
 .card-holder {
-/*  background-color: var(--bg-card); */
-  background-color: #fff;
+background-color: var(--bg-card);
+ /* background-color: #fff; */
   box-shadow:
     9px 8px 30px black,
     -5px -8px 30px black;
@@ -262,7 +262,6 @@ section {
   flex-direction: column;
   backdrop-filter: blur(130px);
   max-width: 500px;
-  height: 300px;
   border-radius: 10px;
 }
 
@@ -468,6 +467,7 @@ section {
 
   .hero {
     align-items: center;
+    padding: 20px;
   }
 
   header div .menu-btn {
@@ -537,6 +537,7 @@ section {
 
   .hero {
     align-items: center;
+    padding: 10px;
   }
 
   header div .menu-btn {
